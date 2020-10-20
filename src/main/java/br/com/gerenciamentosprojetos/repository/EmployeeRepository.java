@@ -1,6 +1,6 @@
-package br.com.gerenciamentoprojetos.Repository;
+package br.com.gerenciamentosprojetos.repository;
 
-import br.com.gerenciamentoprojetos.Model.Employee;
+import br.com.gerenciamentosprojetos.model.Employee;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface EmployeeRepository extends JpaRepository <Employee, Long> {

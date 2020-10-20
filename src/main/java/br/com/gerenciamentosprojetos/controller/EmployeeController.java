@@ -1,13 +1,12 @@
-package br.com.gerenciamentoprojetos.Controller;
+package br.com.gerenciamentosprojetos.controller;
 
-import br.com.gerenciamentoprojetos.Model.Employee;
-import br.com.gerenciamentoprojetos.Repository.EmployeeRepository;
+import br.com.gerenciamentosprojetos.model.Employee;
+import br.com.gerenciamentosprojetos.repository.EmployeeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import java.awt.*;
 import java.util.List;
 
 public class EmployeeController {
@@ -16,6 +15,7 @@ public class EmployeeController {
 
     @GetMapping("/employee/list")
     public List<Employee> getAllEmployees(){
+        System.out.println("FOI AQUI EIN");
         List<Employee> lists = employeeRepository.findAll();
         return lists;
     }

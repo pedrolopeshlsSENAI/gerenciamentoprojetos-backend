@@ -1,13 +1,13 @@
-package br.com.gerenciamentoprojetos;
+package br.com.gerenciamentosprojetos;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class GerenciamentoprojetosApplication {
+public class GerenciamentosprojetosApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(GerenciamentoprojetosApplication.class, args);
+		SpringApplication.run(GerenciamentosprojetosApplication.class, args);
 	}
 
 }

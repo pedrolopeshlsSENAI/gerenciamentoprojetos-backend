@@ -1,10 +1,10 @@
-package br.com.gerenciamentoprojetos;
+package br.com.gerenciamentosprojetos;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class GerenciamentoprojetosApplicationTests {
+class GerenciamentosprojetosApplicationTests {
 
 	@Test
 	void contextLoads() {

@@ -1,4 +1,4 @@
-package br.com.gerenciamentoprojetos.Model;
+package br.com.gerenciamentosprojetos.model;
 
 import org.springframework.lang.NonNull;
 
