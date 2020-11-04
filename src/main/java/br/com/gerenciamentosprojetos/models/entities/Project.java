@@ -49,9 +49,9 @@ public class Project {
 
     public Project(){}
 
-    public Project(String name, String descricao, String status, String risco, double budget, Date initialDate, Date previsionDate, Date finalDate, Employee manager) {
+    public Project(String name, String description, String status, String risco, double budget, Date initialDate, Date previsionDate, Date finalDate, Employee manager) {
         this.name = name;
-        this.description = descricao;
+        this.description = description;
         this.status = status;
         this.risk = risco;
         this.budget = budget;
@@ -77,12 +77,12 @@ public class Project {
         this.name = name;
     }
 
-    public String getDescricao() {
+    public String getDescription() {
         return description;
     }
 
-    public void setDescricao(String descricao) {
-        this.description = descricao;
+    public void setDescription(String description) {
+        this.description = description;
     }
 
     public String getStatus() {
