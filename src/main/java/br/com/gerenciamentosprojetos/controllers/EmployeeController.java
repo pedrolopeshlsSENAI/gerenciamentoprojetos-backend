@@ -24,6 +24,7 @@ public class EmployeeController {
         try{
 //            System.out.println(employee.getNome());
             return employeeService.store(employee);
+
         }catch (Exception e){
             System.out.println(e);
             return e;

@@ -14,16 +14,16 @@ public class Project {
     private Long id;
 
     @Column(nullable = false, length = 80)
-    private String nome;
+    private String name;
 
     @Column(nullable = false, length = 200)
-    private String descricao;
+    private String description;
 
     @Column(nullable = false, length = 70)
     private String status;
 
     @Column(nullable = false, length = 45)
-    private String risco;
+    private String risk;
 
     @Column(nullable = false)
     private double budget;
@@ -49,11 +49,11 @@ public class Project {
 
     public Project(){}
 
-    public Project(String nome, String descricao, String status, String risco, double budget, Date initialDate, Date previsionDate, Date finalDate, Employee manager) {
-        this.nome = nome;
-        this.descricao = descricao;
+    public Project(String name, String descricao, String status, String risco, double budget, Date initialDate, Date previsionDate, Date finalDate, Employee manager) {
+        this.name = name;
+        this.description = descricao;
         this.status = status;
-        this.risco = risco;
+        this.risk = risco;
         this.budget = budget;
         this.initialDate = initialDate;
         this.previsionDate = previsionDate;
@@ -70,19 +70,19 @@ public class Project {
     }
 
     public String getNome() {
-        return nome;
+        return name;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    public void setNome(String name) {
+        this.name = name;
     }
 
     public String getDescricao() {
-        return descricao;
+        return description;
     }
 
     public void setDescricao(String descricao) {
-        this.descricao = descricao;
+        this.description = descricao;
     }
 
     public String getStatus() {
@@ -94,11 +94,11 @@ public class Project {
     }
 
     public String getRisco() {
-        return risco;
+        return risk;
     }
 
     public void setRisco(String risco) {
-        this.risco = risco;
+        this.risk = risco;
     }
 
     public double getOrcamento() {
@@ -152,8 +152,8 @@ public class Project {
 
     @Override
     public String toString() {
-        return "Projeto " + nome + ", descricao: " + descricao + ", status: " + status + "\nrisco: "
-                + risco + ", orcamento: " + budget + ", data início: " + initialDate + ", data previsão: " + previsionDate
+        return "Projeto " + name + ", descricao: " + description + ", status: " + status + "\nrisco: "
+                + risk + ", orcamento: " + budget + ", data início: " + initialDate + ", data previsão: " + previsionDate
                 + ", data final=" + finalDate + ", gerente:" + manager + ", funcionários: " + employees;
     }
 }
