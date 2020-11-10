@@ -1,5 +1,7 @@
 package br.com.gerenciamentosprojetos.models.entities;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 import java.sql.Date;
 import java.util.List;
 
@@ -29,12 +31,15 @@ public class Project {
     private double budget;
 
     @Column(name="initial_date", nullable = false)
+    @JsonFormat(pattern="yyyy-MM-dd")
     private Date initialDate;
 
     @Column(name="prevision_date", nullable = false)
+    @JsonFormat(pattern="yyyy-MM-dd")
     private Date previsionDate;
 
     @Column(name="final_date", nullable = false)
+    @JsonFormat(pattern="yyyy-MM-dd")
     private Date finalDate;
 
     @OneToOne
@@ -69,11 +74,11 @@ public class Project {
         this.id = id;
     }
 
-    public String getNome() {
+    public String getName() {
         return name;
     }
 
-    public void setNome(String name) {
+    public void setName(String name) {
         this.name = name;
     }
 
@@ -93,59 +98,59 @@ public class Project {
         this.status = status;
     }
 
-    public String getRisco() {
+    public String getRisk() {
         return risk;
     }
 
-    public void setRisco(String risco) {
-        this.risk = risco;
+    public void setRisk(String risk) {
+        this.risk = risk;
     }
 
-    public double getOrcamento() {
+    public double getBudget() {
         return budget;
     }
 
-    public void setOrcamento(double budget) {
+    public void setBudget(double budget) {
         this.budget = budget;
     }
 
-    public Date getDataInicio() {
+    public Date getInitialDate() {
         return initialDate;
     }
 
-    public void setDataInicio(Date initialDate) {
+    public void setInitialDate(Date initialDate) {
         this.initialDate = initialDate;
     }
 
-    public Date getDataPrevisao() {
+    public Date getPrevisionDate() {
         return previsionDate;
     }
 
-    public void setDataPrevisao(Date previsionDate) {
+    public void setPrevisionDate(Date previsionDate) {
         this.previsionDate = previsionDate;
     }
 
-    public Date getDataFinal() {
+    public Date getFinalDate() {
         return finalDate;
     }
 
-    public void setDataFinal(Date finalDate) {
+    public void setFinalDate(Date finalDate) {
         this.finalDate = finalDate;
     }
 
-    public Employee getGerente() {
+    public Employee getManager() {
         return manager;
     }
 
-    public void setGerente(Employee manager) {
+    public void setManager(Employee manager) {
         this.manager = manager;
     }
 
-    public List<Employee> getFuncionarios() {
+    public List<Employee> getEmployees() {
         return employees;
     }
 
-    public void setFuncionarios(List<Employee> employees) {
+    public void setEmployees(List<Employee> employees) {
         this.employees = employees;
     }
 

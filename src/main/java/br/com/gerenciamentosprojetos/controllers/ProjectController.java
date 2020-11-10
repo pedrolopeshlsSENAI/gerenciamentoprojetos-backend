@@ -21,7 +21,7 @@ public class ProjectController {
     @PostMapping
     public Object store(@RequestBody Project project) throws Exception{
         try{
-            System.out.println(project.getNome());
+            System.out.println(project.getName());
             return projectService.store(project);
         }
         catch(Exception e){
